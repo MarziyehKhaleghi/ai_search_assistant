@@ -1,0 +1,9 @@
+# Python midlertidige filer
+__pycache__/
+*.pyc
+
+# Miljøvariabler
+.env
+
+# Node-moduler
+node_modules/
