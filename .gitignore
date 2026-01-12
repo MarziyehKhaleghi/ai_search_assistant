@@ -2,8 +2,16 @@
 __pycache__/
 *.pyc
 
+# Virtuelt miljø
+venv/
+
 # Miljøvariabler
 .env
 
 # Node-moduler
 node_modules/
+
+# Editor / OS (valgfritt men anbefalt)
+.vscode/
+.idea/
+.DS_Store
