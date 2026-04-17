@@ -3,7 +3,7 @@ from core.client import get_client
 import numpy as np
 
 
-def answer_question(query: str, vector_store, top_k: int = 5) -> dict:
+def answer_question(query: str, vector_store, top_k: int = 3) -> dict:
     """
     Tar et spørsmål, søker i vector store og genererer et AI-svar.
     """
@@ -19,7 +19,32 @@ def answer_question(query: str, vector_store, top_k: int = 5) -> dict:
 
 
     # 2. Søk i vector store
-    results = vector_store.search(query_vector, top_k=top_k)
+    results = vector_store.search(query_vector, top_k)
+     # sorter (lav score = bedre)
+    results = sorted(results, key=lambda x: x["score"])
+
+    # finn beste score
+    best_score = results[0]["score"]
+
+    # dynamisk threshold (litt slingringsmonn)
+    margin = 0.2
+
+    filtered_results = [
+    r for r in results
+    if r["score"] <= best_score + margin
+    ]
+
+
+    # fallback hvis alt filtreres bort
+    if not filtered_results:
+        filtered_results = results[:1]
+
+    results = filtered_results
+
+    print("ANTALL RESULTATER:", len(results))
+
+    for r in results:
+        print("SOURCE:", r["metadata"])
 
     # 3. Bygg prompt
     context = "\n\n".join([r["text"] for r in results])

@@ -15,5 +15,5 @@ if not OPENAI_API_KEY:
 #Andre innstillinger / konstanter
 DATA_PATH = "data/"        # sti til dokumentmappen
 CHUNK_SIZE = 500           # hvor stor hver chunk skal være
-TOP_K = 2                 # antall relevante resultater som hentes
+TOP_K = 3                 # antall relevante resultater som hentes
 MODEL_NAME = "text-embedding-3-small"  # hvilken modell som brukes

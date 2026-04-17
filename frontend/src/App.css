@@ -1,0 +1,160 @@
+/* Reset litt basic */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Tittel */
+.title {
+  margin-bottom: 30px;
+}
+
+/* Search box */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #E5E7EB;
+  border-radius: 30px;
+  padding: 8px 12px;
+  max-width: 770px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.search-box:focus-within {
+  border-color: #4285F4;
+  box-shadow: 0 0 0 2px rgba(66,133,244,0.2);
+}
+
+/* Icon */
+.search-icon {
+  color: #888;
+  margin-right: 8px;
+}
+
+.icon-button {
+  background: #4285F4;
+  color: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  background: #3367d6;
+}
+
+.icon-button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+
+
+/* Search form 
+.search-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}*/
+
+/* Input */
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* Button 
+.search-box button {
+  background: #4285F4;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #0056b3;
+}
+
+.search-box button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Spinner */
+.spinner-container {
+  margin-top: 20px;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Answer box */
+.answer-box {
+  margin-top: 30px;
+  padding: 15px;
+  background: white;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Sources */
+.sources {
+  margin-top: 30px;
+  text-align: left;
+}
+
+/* Source item */
+.source-item {
+  background: white;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.read-more-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.read-more-button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  color: #4285F4;
+  cursor: pointer;
+}
+
+.read-more-button:hover {
+  text-decoration: underline;
+}
