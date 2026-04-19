@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Search, Loader, ArrowRight, Send } from "lucide-react";
+import { Search, Loader, ArrowRight } from "lucide-react";
 import "./App.css";
 
 function App() {
