@@ -22,7 +22,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/search`, {
+      const response = await fetch("https://ai-search-assistant-7579.onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
