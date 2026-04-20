@@ -18,6 +18,15 @@ body {
   margin-bottom: 30px;
 }
 
+.demo {
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 /* Search box */
 .search-box {
   display: flex;

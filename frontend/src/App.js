@@ -51,6 +51,13 @@ function App() {
     <div className="container">
       <h1 className="title">AI Search Assistant</h1>
 
+      <div className="demo">
+        <strong>About this demo:</strong><br />
+        This AI assistant retrieves answers from a predefined set of documents.
+        Best results are achieved when asking questions related to the dataset.
+        The system is still under development.
+      </div>
+
       <form className="search-form" onSubmit={handleSearch}>
         <div className="search-box">
 
@@ -58,7 +65,7 @@ function App() {
           
           <input
             type="text"
-            placeholder="Enter your search here..."
+            placeholder="Ask about AI, Norway, healthcare, education or cybersecurity..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             className="search-input"
@@ -93,7 +100,11 @@ function App() {
             <div key={index} className="source-item">
 
               <p><strong>File:</strong> {item.metadata.source}</p>
-              <p><strong>Score:</strong> {item.score}</p>
+
+              {/*
+              <p><strong>Score:</strong> {item.score}</p> 
+              */}
+
               <p>
                 <strong>Snippet:</strong>{" "}
                 {expandedItems[index]
