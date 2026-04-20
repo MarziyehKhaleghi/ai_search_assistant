@@ -115,8 +115,10 @@ ai_search_assistant/
 {
   "query": "your search text"
 }
+```
 
 **Response:**
+```
 {
   "results": [
     {
@@ -125,6 +127,7 @@ ai_search_assistant/
     }
   ]
 }
+```
 
 ## Deployment
 Backend (Render)
@@ -142,29 +145,29 @@ Deploying cloud applications (Vercel + Render)
 Handling CORS and environment variables
 Debugging fullstack issues in production
 
-
+## relevant questions
 The system performs best when users ask questions directly related to the indexed documents.
 You can ask questions like:
 
 -Explanations
 “What is artificial intelligence?”
 “How does machine learning work?”
-“What is FAISS used for?”
+
 -Healthcare & technology
 “How is AI used in healthcare?”
 “What are the benefits of digital health services?”
-🇳🇴 Society & economy
-“What challenges does Norway face due to an aging population?”
-“What are the main industries in Norway?”
+
 -Education & innovation
 “How does education support innovation?”
 “What fields are important for the future workforce?”
+
 -Cybersecurity & digitalization
 “Why is cybersecurity important?”
-“What risks come with increased digitalization?”
+
 -General conceptual topics
 “How is cooking both an art and a science?”
 “What techniques are used in cooking?”
 
+## author
 Built by Marziyeh Khaleghi
 Fullstack AI & Software Engineering Project
