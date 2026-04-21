@@ -130,20 +130,20 @@ ai_search_assistant/
 ```
 
 ## Deployment
-Backend (Render)
-Hosted on Render cloud platform
-Runs with: uvicorn api.main:app
-Frontend (Vercel)
-Hosted on Vercel
-Connected to backend via environment variables
+-  Backend (Render)
+-  Hosted on Render cloud platform
+-  Runs with: uvicorn api.main:app
+-  Frontend (Vercel)
+-  Hosted on Vercel
+-  Connected to backend via environment variables
 
 ## Key Learnings
-Building a fullstack AI system from scratch
-Working with embeddings and vector search
-Connecting frontend and backend in production
-Deploying cloud applications (Vercel + Render)
-Handling CORS and environment variables
-Debugging fullstack issues in production
+-  Building a fullstack AI system from scratch
+-  Working with embeddings and vector search
+-  Connecting frontend and backend in production
+-  Deploying cloud applications (Vercel + Render)
+-  Handling CORS and environment variables
+-  Debugging fullstack issues in production
 
 ## relevant questions
 The system performs best when users ask questions directly related to the indexed documents.
